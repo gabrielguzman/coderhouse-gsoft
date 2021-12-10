@@ -66,8 +66,21 @@
     color: white;
     font-size: 20px;
     text-align: center;
+    animation-name: mi_efecto;
+    animation-duration: 4s;
+
   }
-  
+
+
+  @keyframes mi_efecto {
+    0%{ color: whitesmoke; }
+    0.2s{ color: gray; font-weight:200px }
+    25%{ color: orange; font-family: 'Arial' }
+    50%{ color: yellow; font-size: 40px }
+    1s(font-family: "Times New Roman")
+    75%{ font-size: 45px;}
+    100%{ width: auto; font-size: 40px,}
+ }
 
   .content-nosotros{
     grid-area: content;
@@ -212,11 +225,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: whitesmoke;
   }
 
   .content-portfolio img{
-    height: auto;
+    height: 300px;
+    max-width: auto;
     border-radius: 20px;
+    transition: all 3s;
+    filter: sepia(70%);
   }
 
 /* Desktop */
@@ -394,7 +411,14 @@
   .content-portfolio img{
         width: 400px;
         height: auto;
-        filter: grayscale(1);
+        filter: grayscale(100%);
+        transition: all 2s;
+  }
+
+  .content-portfolio img:hover{
+        height: auto;
+        width: 500px;
+        filter: none;
   }
 
   .content-portfolio p{
