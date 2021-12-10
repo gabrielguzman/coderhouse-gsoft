@@ -78,15 +78,17 @@
   }
 
   .content-nosotros>div:nth-child(1){
-    background-color: rgb(235, 227, 227);
+    background-image: linear-gradient(to right,red,black);
+    color:white;
+
   }
   .content-nosotros>div:nth-child(2){
-    background-color:steelblue;
+    background-image:linear-gradient(steelblue,red);
     color: whitesmoke;
   }
   .content-nosotros>div:nth-child(3){
-    background-color: thistle;
-    color: rgb(19, 18, 18);
+    background-image: linear-gradient(thistle,purple);
+    color: whitesmoke
   }
 
   img{
@@ -135,6 +137,7 @@
     align-items: center;
     transition: all 2s;
     margin: 0px 0px 5px 0px;
+    transform: rotate(180deg);
   }
 
   .content-contacto{
@@ -315,6 +318,7 @@
       justify-content: center;
       align-items: center;
       margin-left: 20px;
+      transform: rotate(360deg);
   }
 
   .servicios-item p{
@@ -395,6 +399,10 @@
 
   .content-portfolio p{
       text-align: center;
+  }
+
+  #grad{
+    background-image: linear-gradient(red,yellow);
   }
   
 }
